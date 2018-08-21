@@ -4,7 +4,7 @@ App destinée à calculer la rentabilité d'un projet immobilier
 
 L'App n'est pas terminée, je débute.
 
-Dans cette Version 1 j'ai 3 problèmatiques :
+Dans cette Version 1 j'ai 3 problématiques :
 
 1 - Faire disparaitre le clavier lorsque le champ texte est rempli.
     -> OK
