@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="immoInfos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="74I-97-em6">
+                                <rect key="frame" x="16" y="37" width="288" height="123"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">L'application Immo-Infos va vous permettre de rentrer des informations concernant le bien que vous souhaitez acquérir et d'en déduire la rentablité nette pour vous aider à décider si vous souhaitez acheter ce bien ou pas.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Montant du bien :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZ5-Nb-hbo">
+                                <rect key="frame" x="93" y="168" width="134" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="A6Z-kd-fGi"/>
+                                    <constraint firstAttribute="width" secondItem="BZ5-Nb-hbo" secondAttribute="height" multiplier="67:10" id="Zhd-Zt-r2t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="montant..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nbq-rG-9BP">
+                                <rect key="frame" x="93" y="196" width="134" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="continue" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Montant des frais de notaire :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWV-CZ-weQ">
+                                <rect key="frame" x="47" y="246" width="224" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qid-tz-ZwN">
+                                <rect key="frame" x="47" y="269" width="224" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBh-cz-hwn">
+                                <rect key="frame" x="132" y="321" width="57" height="30"/>
+                                <state key="normal" title="Calculer"/>
+                                <connections>
+                                    <action selector="calcule:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NnZ-wz-k4i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Montant total du bien !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3Z-CI-XaY">
+                                <rect key="frame" x="41" y="383" width="252" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qid-tz-ZwN" firstAttribute="top" secondItem="IWV-CZ-weQ" secondAttribute="bottom" constant="2" id="1vX-wE-hfR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qid-tz-ZwN" secondAttribute="trailing" constant="49" id="2hz-b5-pot"/>
+                            <constraint firstItem="BZ5-Nb-hbo" firstAttribute="leading" secondItem="Nbq-rG-9BP" secondAttribute="leading" id="4Sr-ke-Eg6"/>
+                            <constraint firstItem="BZ5-Nb-hbo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="CWS-Oz-deh"/>
+                            <constraint firstItem="BZ5-Nb-hbo" firstAttribute="centerX" secondItem="74I-97-em6" secondAttribute="centerX" id="EPx-25-7ZM"/>
+                            <constraint firstItem="IWV-CZ-weQ" firstAttribute="top" secondItem="Nbq-rG-9BP" secondAttribute="bottom" constant="20" id="EeO-NK-BEC"/>
+                            <constraint firstItem="dBh-cz-hwn" firstAttribute="top" secondItem="Qid-tz-ZwN" secondAttribute="bottom" constant="22" id="I0m-CU-brk"/>
+                            <constraint firstItem="Qid-tz-ZwN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="JEb-7Q-8VG"/>
+                            <constraint firstItem="BZ5-Nb-hbo" firstAttribute="centerX" secondItem="dBh-cz-hwn" secondAttribute="centerX" id="Jhu-K1-sOr"/>
+                            <constraint firstItem="BZ5-Nb-hbo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="168" id="Ktg-Rz-hej"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nbq-rG-9BP" secondAttribute="trailing" constant="93" id="Kwd-zz-oAH"/>
+                            <constraint firstItem="Nbq-rG-9BP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="MGU-gf-7GF"/>
+                            <constraint firstItem="74I-97-em6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="O9y-xy-Utz"/>
+                            <constraint firstItem="BZ5-Nb-hbo" firstAttribute="top" secondItem="74I-97-em6" secondAttribute="bottom" constant="8" symbolic="YES" id="Pp2-vb-7Fl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IWV-CZ-weQ" secondAttribute="trailing" constant="49" id="Rvo-ys-Ig7"/>
+                            <constraint firstItem="74I-97-em6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZLv-2f-EV6"/>
+                            <constraint firstItem="IWV-CZ-weQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="aQP-YJ-yJd"/>
+                            <constraint firstItem="BZ5-Nb-hbo" firstAttribute="top" secondItem="74I-97-em6" secondAttribute="bottom" constant="8" id="ffZ-ek-kYg"/>
+                            <constraint firstItem="E3Z-CI-XaY" firstAttribute="top" secondItem="dBh-cz-hwn" secondAttribute="bottom" constant="32" id="g9O-oE-WgA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E3Z-CI-XaY" secondAttribute="trailing" constant="27" id="ioK-Y4-iYc"/>
+                            <constraint firstItem="Nbq-rG-9BP" firstAttribute="top" secondItem="BZ5-Nb-hbo" secondAttribute="bottom" constant="8" id="kIr-6X-d1h"/>
+                            <constraint firstItem="E3Z-CI-XaY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="lql-oU-6DK"/>
+                            <constraint firstItem="BZ5-Nb-hbo" firstAttribute="trailing" secondItem="Nbq-rG-9BP" secondAttribute="trailing" id="mE1-2f-87s"/>
+                            <constraint firstItem="BZ5-Nb-hbo" firstAttribute="top" secondItem="74I-97-em6" secondAttribute="bottom" constant="8" id="mpc-q6-SeK"/>
+                            <constraint firstItem="E3Z-CI-XaY" firstAttribute="top" secondItem="dBh-cz-hwn" secondAttribute="bottom" constant="32" id="niE-L5-9Ar"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BZ5-Nb-hbo" secondAttribute="trailing" constant="93" id="tEE-wI-toN"/>
+                            <constraint firstItem="Nbq-rG-9BP" firstAttribute="top" secondItem="BZ5-Nb-hbo" secondAttribute="bottom" constant="8" id="zZf-0v-K9D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="montantAchat" destination="Nbq-rG-9BP" id="KNK-zj-ekW"/>
+                        <outlet property="montantFraisNotaire" destination="Qid-tz-ZwN" id="03I-T1-B5N"/>
+                        <outlet property="reusltat" destination="E3Z-CI-XaY" id="5v9-6G-IMo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.5" y="132.04225352112675"/>
+        </scene>
+    </scenes>
+</document>
