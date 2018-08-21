@@ -8,8 +8,10 @@ Dans cette Version 1 j'ai 3 problèmatiques :
 
 1 - Faire disparaitre le clavier lorsque le champ texte est rempli.
     -> OK
+    
 2 - Convertir des String en Int.
     -> OK
+    
 3 - Convertir des Int en String pour l'afficher sur le Label.
     -> OK
     
